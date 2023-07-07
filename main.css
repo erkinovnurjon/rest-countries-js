@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.dark{
+    background-color: rgba(2, 2, 12, 0.833);
+    color:#fff;
+}
+.container{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.container:nth-child(1){
+    box-shadow: 0 0 5px rgba(0 , 0 , 0 ,0.3);
+    /* position: fixed; */
+}
+button{
+    outline: none;
+    border: 0;
+    background: transparent;
+}
+.toggle{
+    font-size: 18px;
+    cursor: pointer;
+}
+.toggle i{
+    padding-right: 5px;
+}
+.form-control{
+    width: 500px;
+    box-shadow: 0 0 5px rgba(0 , 0 , 0 ,0.3);
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color:rgba(59, 54, 83, 0.756) ;
+    color: #fff;
+    background: transparent;
+    color: transparent;
+}
+.form-control input{
+    width: 100%;
+    padding: 17px 14px;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    background: transparent;
+}
+.form-control i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: #000;
+    background: transparent;
+}
+.dropdownCon{
+    width: 100px;
+    position: relative;
+    background-color: #5a1414;
+    border-radius: 5px;
+}
+i{
+    cursor: pointer;
+}
+.dropDown{
+    width: 100%;
+    padding:17px 14px ;
+    border-radius:5px;
+    box-shadow:0 0 5px rgba(0 , 0 , 0 ,0.3);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    background: transparent;
+    gap: 10px;
+}
+.dropDown p{
+    letter-spacing: 0.5px;
+}
+.drop{
+    position: absolute;
+    box-shadow : 0 0 5px rgba(0 , 0 , 0 ,0.3);
+    padding: 17px 14px;
+    width: 170px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    /* background: transparent; */
+    color: #000;
+    align-items:center;
+}
+.drop p{
+   margin: 5px 0;
+}
+.countries{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px , 1fr) );
+    grid-gap: 20px;
+}
+.country{
+    min-height: 350px;
+    box-shadow : 0 0 5px rgba(0 , 0 , 0 ,0.3);
+    border-radius:5px;
+    overflow: hidden;
+    background-color:rgba(59, 54, 83, 0.756) ;
+    color: #000;
+    background: transparent;
+}
+.country-img{
+    height: 250px;
+}
+.country-img img{
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+}
+.country-info{
+    padding: 20px 17px;
+}
+.country-info h5{
+    padding: 8px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.country-info p {
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.country-info p>strong{
+   color: black;
+}
+.showDropDown{
+    display: none;
+    background-color: #5a1414;
+}
+.countryModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+}
+.back{
+    box-shadow: 0 0 5px rgba(0 , 0 , 0 ,0.3);
+    top: 3rem;
+    left: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.modal{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(300px , 1fr) );
+   align-items:center ; 
+   height: 100%;
+   width: 100%;
+}
+.leftModal{
+    width: 50%;
+}
+.leftModal img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+.rightModal{
+    width: 50%;
+    margin-left: 40px;
+}
+.rightModal h1{
+    margin: 10px 0;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.modalInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.inner p{
+    letter-spacing: 1px;
+}
+.inner p>strong{
+    font-weight: 600;
+}
+.show{
+    display: none;
+}
+.showModal{
+    background-color: #11092f;
+    color: #fff;
+}
+.showButton{
+    display: flex;justify-content: space-between;
+}
+
